@@ -1,0 +1,26 @@
+.modals{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(219, 217, 217, 0.735);
+}
+form{
+    width: 380px;
+    background-color: #fff;
+    margin: auto;
+    padding: 15px 25px;
+    border-radius: 10px;
+    animation-name: drop;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes drop{
+    0%{
+        transform: translateY(0);
+
+    }
+    100%{
+        transform: translateY(70px);
+    }
+}
