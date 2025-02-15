@@ -4,18 +4,25 @@ import Modal from "./components/Modal";
 
 function App(){
   const [modalToogle,setModalToggle]=useState(true);
+  const [product,setproduct]=useState([]);
   function handleClick()
   {
     setModalToggle(false)
+  }
+  function getProduct(val){
+    setproduct((pre)=>(
+      [...pre,
+        val]
+    ))
   }
   return (
     <>
       <div className="container">
           <h2>List Products</h2>
           <button className="btn btn-primary float-end" onClick={handleClick}>Add Product</button>
-          <Lists/>
+          <Lists products={product}/>
       </div>
-      {modalToogle ? '':<Modal onClose={()=>setModalToggle(true)}/>}
+      {modalToogle ? '':<Modal submit={getProduct} onClose={()=>setModalToggle(true)}/>}
     </>
   );
 }
