@@ -1,4 +1,4 @@
-function Lists({products}){
+function Lists({products,onDelete}){
     return(
         <table className="table text-center align-middle mt-5" style={{ tableLayout:'fixed' }}>
             <thead>
@@ -22,7 +22,7 @@ function Lists({products}){
                                 <td><img width={80} src={val.urlFile} alt="" /></td>
                                 <td>
                                     <button className="btn btn-success me-2">Edit</button>
-                                    <button className="btn btn-danger">Delete</button>
+                                    <button className="btn btn-danger" onClick={()=>onDelete(index)}>Delete</button>
                                 </td>
                             </tr>
                     );

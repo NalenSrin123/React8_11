@@ -15,12 +15,17 @@ function App(){
         val]
     ))
   }
+  function handleDelete(index){
+   if(confirm("Are you sure to delete this product?")){
+    setproduct((prev) => prev.filter((_, i) => i !== index));
+   }
+  }
   return (
     <>
       <div className="container">
           <h2>List Products</h2>
           <button className="btn btn-primary float-end" onClick={handleClick}>Add Product</button>
-          <Lists products={product}/>
+          <Lists products={product} onDelete={handleDelete}/>
       </div>
       {modalToogle ? '':<Modal submit={getProduct} onClose={()=>setModalToggle(true)}/>}
     </>
