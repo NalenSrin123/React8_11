@@ -1,0 +1,31 @@
+.page{
+    width: 60%;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+nav{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(248, 0, 0);
+    padding: 10px;
+    ul{
+        display: flex;
+        gap: 20px;
+        li{
+            list-style: none;
+            font-size: 20px;
+            .link{
+                color: #fff;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+    }
+}
