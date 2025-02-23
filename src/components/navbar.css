@@ -1,0 +1,51 @@
+ul{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    li{
+        list-style: none;
+        .link{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
+    }
+}
+.shopping{
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    position: relative;
+}
+.drop-down{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    display: none;
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            font-size: 18px;
+        }
+    }
+}
+.shopping:hover .drop-down{
+    display: block;
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes drop{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}

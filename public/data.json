@@ -1,0 +1,32 @@
+[
+    {
+        "id" :1,
+        "name":"infinix Phone",
+        "category":"Phone",
+        "image":"/public/images/infinix.png",
+        "reqular_price":45.90,
+        "sale_price":29,
+        "rating":5,
+        "description":"This is the ideal synthesis of contemporary design, cutting-edge digital technology, and a comfortable reading experience."
+    },
+    {
+        "id" :2,
+        "name":" IPhone",
+        "category":"Phone",
+        "image":"/public/images/iphone.png",
+        "reqular_price":899.99,
+        "sale_price":850,
+        "rating":5,
+        "description":"This is the ideal synthesis of contemporary design, cutting-edge digital technology, and a comfortable reading experience."
+    },
+    {
+        "id" :3,
+        "name":" MacBook",
+        "category":"Labtop",
+        "image":"/public/images/laptop.png",
+        "reqular_price":159.99,
+        "sale_price":130,
+        "rating":5,
+        "description":"This is the ideal synthesis of contemporary design, cutting-edge digital technology, and a comfortable reading experience."
+    }
+]
