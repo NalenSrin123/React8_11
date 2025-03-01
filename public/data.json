@@ -16,17 +16,17 @@
         "image":"/public/images/iphone.png",
         "reqular_price":899.99,
         "sale_price":850,
-        "rating":5,
+        "rating":2,
         "description":"This is the ideal synthesis of contemporary design, cutting-edge digital technology, and a comfortable reading experience."
     },
     {
         "id" :3,
-        "name":" MacBook",
-        "category":"Labtop",
-        "image":"/public/images/laptop.png",
-        "reqular_price":159.99,
-        "sale_price":130,
-        "rating":5,
+        "name":" Iphone",
+        "category":"phone",
+        "image":"/public/images/image1.png",
+        "reqular_price":1599.99,
+        "sale_price":1450,
+        "rating":3,
         "description":"This is the ideal synthesis of contemporary design, cutting-edge digital technology, and a comfortable reading experience."
     }
 ]
